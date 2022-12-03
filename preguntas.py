@@ -26,7 +26,7 @@ def pregunta_01():
     print(digits.data.shape)
 
     # Imprima las dimensiones del vector de salida
-    print(digits.images.shape)
+    print(digits.target.shape)
 
 
 def pregunta_02():
@@ -50,7 +50,7 @@ def pregunta_02():
     # estratificados. La semilla del generador de números aleatorios es 42.
     # El tamaño del test es del 20%
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=423, stratify=y
+        X, y, test_size=0.2, random_state=42, stratify=y
     )
 
     # Cree un clasificador con siete vecinos
